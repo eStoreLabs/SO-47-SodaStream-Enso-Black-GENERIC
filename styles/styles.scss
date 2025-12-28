@@ -98,7 +98,6 @@ $media-breakpoint-xl: 1200px;
   }
 
   .es-section-title {
-
     font-weight: 700;
     font-size: $fs-header;
     text-align: center;
@@ -178,7 +177,7 @@ $media-breakpoint-xl: 1200px;
         margin-bottom: 10px;
         margin-top: 40px;
         font-weight: 900;
-        font-size: 35px;
+        font-size: 25px;
       }
 
       &--mint {
@@ -186,7 +185,7 @@ $media-breakpoint-xl: 1200px;
       }
 
       &--bottomline {
-        font-weight: 700;
+        font-weight: 500;
         font-size: 16px;
       }
     }
@@ -195,7 +194,7 @@ $media-breakpoint-xl: 1200px;
       margin-bottom: 35px;
       font-weight: 700;
       text-align: center;
-      font-size: 30px;
+      font-size: 25px;
     }
 
     &__packshot {
@@ -217,7 +216,7 @@ $media-breakpoint-xl: 1200px;
         display: block;
         max-width: 70%;
         margin: 0 auto;
-        font-size: 20px;
+        font-size: 16px;
         text-align: center;
       }
     }
@@ -413,6 +412,8 @@ $media-breakpoint-xl: 1200px;
     }
 
     &__title {
+      margin-bottom: 10px;
+      font-size: 25px;
       font-weight: 700;
       text-align: center;
     }
@@ -427,12 +428,13 @@ $media-breakpoint-xl: 1200px;
 
     &__list-item-title {
       margin-bottom: 10px;
+      font-size: 16px;
       font-weight: 700;
     }
 
     &__list-item {
       text-align: center;
-      margin-bottom: 15px;
+      // margin-bottom: 15px;
     }
 
     &__list-item-subtitle {
@@ -443,6 +445,8 @@ $media-breakpoint-xl: 1200px;
     &__subtitle {
       margin-bottom: 30px;
       font-weight: 500;
+      font-size: 16px;
+      text-align: center;
     }
 
     &__description {
@@ -536,11 +540,13 @@ $media-breakpoint-xl: 1200px;
       // -webkit-box-flex: 1;
       // flex: 1;
       margin-bottom: 15px;
+      font-size: 25px;
       text-align: center;
     }
 
     &__subtitle {
       text-align: center;
+      font-size: 16px;
     }
 
     &__description {
@@ -1014,7 +1020,7 @@ $media-breakpoint-xl: 1200px;
 
     &__title {
       font-weight: 700;
-      font-size: 21px;
+      font-size: 25px;
       // color: $color-bg;
       text-align: center;
 
@@ -1026,7 +1032,7 @@ $media-breakpoint-xl: 1200px;
     &__subtitle {
       font-weight: 400;
       // color: $color-bg;
-      font-size: 18px;
+      font-size: 16px;
       text-align: center;
 
       &--white {
@@ -1471,6 +1477,12 @@ $media-breakpoint-xl: 1200px;
     padding-top: 50px;
     padding-bottom: 50px;
 
+    &__bottom-title {
+      font-size: 25px;
+      font-weight: 700;
+      text-align: center;
+    }
+
     &__img {
       max-width: 100%;
       width: auto;
@@ -1565,9 +1577,9 @@ $media-breakpoint-xl: 1200px;
     }
 
     &__hashtag {
-      padding-top: 50px;
+      padding-top: 20px;
       margin-top: 0;
-      font-size: 20px;
+      font-size: 25px;
     }
 
     &__headline {

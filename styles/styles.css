@@ -125,20 +125,20 @@
   margin-bottom: 10px;
   margin-top: 40px;
   font-weight: 900;
-  font-size: 35px;
+  font-size: 25px;
 }
 #es-rc #es-rc-content .es-kv__title--mint {
   color: #ABD3BC;
 }
 #es-rc #es-rc-content .es-kv__title--bottomline {
-  font-weight: 700;
+  font-weight: 500;
   font-size: 16px;
 }
 #es-rc #es-rc-content .es-kv__description-title {
   margin-bottom: 35px;
   font-weight: 700;
   text-align: center;
-  font-size: 30px;
+  font-size: 25px;
 }
 #es-rc #es-rc-content .es-kv__packshot {
   position: relative;
@@ -156,7 +156,7 @@
   display: block;
   max-width: 70%;
   margin: 0 auto;
-  font-size: 20px;
+  font-size: 16px;
   text-align: center;
 }
 @container es-rc-content (min-width: 440px) {
@@ -297,6 +297,8 @@
   display: none;
 }
 #es-rc #es-rc-content .es-product__title {
+  margin-bottom: 10px;
+  font-size: 25px;
   font-weight: 700;
   text-align: center;
 }
@@ -306,11 +308,11 @@
 }
 #es-rc #es-rc-content .es-product__list-item-title {
   margin-bottom: 10px;
+  font-size: 16px;
   font-weight: 700;
 }
 #es-rc #es-rc-content .es-product__list-item {
   text-align: center;
-  margin-bottom: 15px;
 }
 #es-rc #es-rc-content .es-product__list-item-subtitle {
   font-weight: 400;
@@ -319,6 +321,8 @@
 #es-rc #es-rc-content .es-product__subtitle {
   margin-bottom: 30px;
   font-weight: 500;
+  font-size: 16px;
+  text-align: center;
 }
 #es-rc #es-rc-content .es-product__description {
   margin: 0 auto;
@@ -382,10 +386,12 @@
 }
 #es-rc #es-rc-content .es-design__title {
   margin-bottom: 15px;
+  font-size: 25px;
   text-align: center;
 }
 #es-rc #es-rc-content .es-design__subtitle {
   text-align: center;
+  font-size: 16px;
 }
 #es-rc #es-rc-content .es-design__description {
   flex: 1;
@@ -719,7 +725,7 @@
 }
 #es-rc #es-rc-content .es-steps__title {
   font-weight: 700;
-  font-size: 21px;
+  font-size: 25px;
   text-align: center;
 }
 #es-rc #es-rc-content .es-steps__title--white {
@@ -727,7 +733,7 @@
 }
 #es-rc #es-rc-content .es-steps__subtitle {
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   text-align: center;
 }
 #es-rc #es-rc-content .es-steps__subtitle--white {
@@ -1048,6 +1054,11 @@
   padding-top: 50px;
   padding-bottom: 50px;
 }
+#es-rc #es-rc-content .es-eco__bottom-title {
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+}
 #es-rc #es-rc-content .es-eco__img {
   max-width: 100%;
   width: auto;
@@ -1112,9 +1123,9 @@
   text-transform: none;
 }
 #es-rc #es-rc-content .es-footer__hashtag {
-  padding-top: 50px;
+  padding-top: 20px;
   margin-top: 0;
-  font-size: 20px;
+  font-size: 25px;
 }
 #es-rc #es-rc-content .es-footer__headline {
   font-size: 24px;
