@@ -121,19 +121,6 @@ $media-breakpoint-xl: 1200px;
     }
   }
 
-  .es-decoration-1 {
-    display: none;
-
-    @container es-rc-content (min-width: 900px) {
-      display: block;
-      width: 80px;
-      position: absolute;
-      left: -30px;
-      width: 70px;
-      top: -5px;
-    }
-  }
-
   .es-desktop {
     position: relative;
 
@@ -202,6 +189,10 @@ $media-breakpoint-xl: 1200px;
         margin-right: 0;
         margin-bottom: 0;
         margin-top: 0;
+
+        &--desktop {
+          display: none;
+        }
       }
     }
 
@@ -258,6 +249,16 @@ $media-breakpoint-xl: 1200px;
       padding-right: 0px;
       padding-bottom: 0;
       overflow: hidden;
+
+      &__packshot__img {
+        &--mobile {
+          display: none;
+        }
+
+        &--desktop {
+          display: block;
+        }
+      }
 
       &__top {
         display: -webkit-box;
@@ -336,7 +337,6 @@ $media-breakpoint-xl: 1200px;
     }
 
     @container es-rc-content (min-width: 768px) {
-
       &__top {
         padding-bottom: 70px;
       }
@@ -444,6 +444,10 @@ $media-breakpoint-xl: 1200px;
       -webkit-box-direction: normal;
       flex-direction: column;
       margin-bottom: 20px;
+
+      &--desktop {
+        display: none;
+      }
     }
 
     &__list-item-title {
@@ -453,7 +457,7 @@ $media-breakpoint-xl: 1200px;
     }
 
     &__list-item {
-      text-align: center;
+      text-align: left;
     }
 
     &__list-item-subtitle {
@@ -1283,199 +1287,6 @@ $media-breakpoint-xl: 1200px;
     }
   }
 
-  .es-faq__link-container {
-    text-decoration: none;
-  }
-
-  .es-faq__link {
-    width: 200px;
-    margin: 0 auto;
-    font-weight: 700;
-    background: #13294b;
-    padding: 10px 20px;
-    border-radius: 40px;
-    color: #ffffff;
-    text-decoration: none;
-    text-align: center;
-  }
-
-  .es-faq__packshot {
-    display: block;
-    width: 100%;
-    max-width: 200px;
-    max-height: 100%;
-    margin: 0 auto;
-    margin-left: -20px;
-    margin-bottom: 20px;
-  }
-
-  .es-faq {
-    padding-top: 15px;
-    padding-bottom: 40px;
-    background-color: $color-light-bg;
-    color: #ffffff;
-    position: relative;
-    z-index: 1;
-  }
-
-  .es-decoration-3 {
-    display: none;
-  }
-
-  .es-faq__title {
-    padding-left: 25px;
-    padding-bottom: 20px;
-    font-weight: 700;
-    font-size: 20px;
-    margin-bottom: 10px;
-    color: $color-bg;
-    text-align: center;
-  }
-
-  .es-faq__item-check {
-    width: 30px;
-  }
-
-  .es-faq__items {
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .es-faq__item-visible {
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    flex-direction: row;
-    gap: 10px;
-    -webkit-box-align: center;
-    align-items: center;
-  }
-
-  .es-faq .es-accordion [type='checkbox']+label:after,
-  [type='checkbox']+label:before {
-    display: none;
-  }
-
-  .es-faq .es-accordion [type='checkbox']+label {
-    display: block !important;
-    padding-left: 0;
-    line-height: normal;
-    height: auto;
-    margin-bottom: 0;
-  }
-
-  .es-faq .es-accordion {
-    margin: 0 auto;
-    max-width: 990px;
-  }
-
-  .es-faq .es-accordion__element {
-    margin: 0 auto;
-    margin-bottom: 10px;
-    padding-bottom: 30px;
-    border: none;
-  }
-
-  .es-faq .es-accordion__element:last-of-type {
-    border-bottom: none;
-  }
-
-  .es-faq .es-accordion__element-content {
-    font-size: 14px;
-    line-height: 1.4;
-    color: $color-bg;
-    background-color: #fff;
-    overflow: hidden;
-    margin-top: -30px;
-    padding-left: 30px;
-    padding-right: 20px;
-    padding-bottom: 10px;
-    max-height: 0;
-    -webkit-transition: max-height 0.5s ease-out;
-    transition: max-height 0.5s ease-out;
-    border-radius: 5px;
-  }
-
-
-  .es-faq .es-accordion__title {
-    padding: 15px 50px 15px 15px;
-    font-size: 14px;
-    color: #fff;
-    background-color: $color-bg;
-    -webkit-transition: all 200ms ease-out;
-    transition: all 200ms ease-out;
-    border-radius: 5px;
-    font-weight: 700;
-    cursor: pointer;
-    z-index: 1;
-    position: relative;
-  }
-
-  .es-faq .es-accordion .es-accordion__arrow {
-    width: 35px;
-    position: absolute;
-    right: 15px;
-    top: 5px;
-    margin: auto 0;
-    -webkit-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
-  }
-
-  .es-faq .es-accordion .active .es-accordion__arrow {
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
-  }
-
-  .es-accordion__checkbox {
-    display: none;
-  }
-
-  .es-accordion__element-content {
-    max-height: 0;
-    overflow: hidden;
-    -webkit-transition: max-height 0.4s ease;
-    transition: max-height 0.4s ease;
-    padding-left: 30px;
-    padding-right: 20px;
-    padding-bottom: 0;
-    margin-top: -30px;
-  }
-
-  .es-accordion__checkbox:checked~.es-accordion__element-content {
-    max-height: 500px;
-    padding-bottom: 10px;
-  }
-
-  .es-accordion__title {
-    display: block;
-    padding: 4px 15px 17px 60px;
-    font-size: 14px;
-    color: #fff;
-    cursor: pointer;
-    position: relative;
-  }
-
-  .es-accordion__arrow {
-    width: 17px;
-    position: absolute;
-    right: 28px;
-    top: 10px;
-    -webkit-transition: -webkit-transform 0.3s ease;
-    transition: -webkit-transform 0.3s ease;
-    transition: transform 0.3s ease;
-    transition: transform 0.3s ease, -webkit-transform 0.3s ease;
-  }
-
-  .es-accordion__checkbox:checked+.es-accordion__title .es-accordion__arrow {
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
-  }
-
   .es-eco {
     background: #005BAB;
     padding-top: 50px;
@@ -1642,6 +1453,13 @@ $media-breakpoint-xl: 1200px;
 
     .es-faq .es-accordion__element-content p {
       font-size: 16px;
+    }
+
+
+    .es-product {
+      &__list {
+        align-items: center;
+      }
     }
   }
 
@@ -1834,6 +1652,16 @@ $media-breakpoint-xl: 1200px;
           width: 180px;
         }
 
+      }
+
+      &__list {
+        &--mobile {
+          display: none;
+        }
+
+        &--desktop {
+          display: block;
+        }
       }
 
       &__list-item-title {

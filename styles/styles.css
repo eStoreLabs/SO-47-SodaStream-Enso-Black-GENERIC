@@ -78,19 +78,6 @@
     display: none;
   }
 }
-#es-rc #es-rc-content .es-decoration-1 {
-  display: none;
-}
-@container es-rc-content (min-width: 900px) {
-  #es-rc #es-rc-content .es-decoration-1 {
-    display: block;
-    width: 80px;
-    position: absolute;
-    left: -30px;
-    width: 70px;
-    top: -5px;
-  }
-}
 #es-rc #es-rc-content .es-desktop {
   position: relative;
 }
@@ -149,6 +136,9 @@
   margin-bottom: 0;
   margin-top: 0;
 }
+#es-rc #es-rc-content .es-kv__packshot__img--desktop {
+  display: none;
+}
 #es-rc #es-rc-content .es-kv__description {
   margin-block-start: 30px;
   margin-block-end: 30px;
@@ -185,6 +175,12 @@
     padding-right: 0px;
     padding-bottom: 0;
     overflow: hidden;
+  }
+  #es-rc #es-rc-content .es-kv__packshot__img--mobile {
+    display: none;
+  }
+  #es-rc #es-rc-content .es-kv__packshot__img--desktop {
+    display: block;
   }
   #es-rc #es-rc-content .es-kv__top {
     display: flex;
@@ -320,13 +316,16 @@
   flex-direction: column;
   margin-bottom: 20px;
 }
+#es-rc #es-rc-content .es-product__list--desktop {
+  display: none;
+}
 #es-rc #es-rc-content .es-product__list-item-title {
   margin-bottom: 10px;
   font-size: 16px;
   font-weight: 700;
 }
 #es-rc #es-rc-content .es-product__list-item {
-  text-align: center;
+  text-align: left;
 }
 #es-rc #es-rc-content .es-product__list-item-subtitle {
   font-weight: 400;
@@ -916,158 +915,6 @@
     left: 13%;
   }
 }
-#es-rc #es-rc-content .es-faq__link-container {
-  text-decoration: none;
-}
-#es-rc #es-rc-content .es-faq__link {
-  width: 200px;
-  margin: 0 auto;
-  font-weight: 700;
-  background: #13294b;
-  padding: 10px 20px;
-  border-radius: 40px;
-  color: #ffffff;
-  text-decoration: none;
-  text-align: center;
-}
-#es-rc #es-rc-content .es-faq__packshot {
-  display: block;
-  width: 100%;
-  max-width: 200px;
-  max-height: 100%;
-  margin: 0 auto;
-  margin-left: -20px;
-  margin-bottom: 20px;
-}
-#es-rc #es-rc-content .es-faq {
-  padding-top: 15px;
-  padding-bottom: 40px;
-  background-color: #7FBFF5;
-  color: #ffffff;
-  position: relative;
-  z-index: 1;
-}
-#es-rc #es-rc-content .es-decoration-3 {
-  display: none;
-}
-#es-rc #es-rc-content .es-faq__title {
-  padding-left: 25px;
-  padding-bottom: 20px;
-  font-weight: 700;
-  font-size: 20px;
-  margin-bottom: 10px;
-  color: #012349;
-  text-align: center;
-}
-#es-rc #es-rc-content .es-faq__item-check {
-  width: 30px;
-}
-#es-rc #es-rc-content .es-faq__items {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-#es-rc #es-rc-content .es-faq__item-visible {
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  align-items: center;
-}
-#es-rc #es-rc-content .es-faq .es-accordion [type=checkbox] + label:after,
-#es-rc #es-rc-content [type=checkbox] + label:before {
-  display: none;
-}
-#es-rc #es-rc-content .es-faq .es-accordion [type=checkbox] + label {
-  display: block !important;
-  padding-left: 0;
-  line-height: normal;
-  height: auto;
-  margin-bottom: 0;
-}
-#es-rc #es-rc-content .es-faq .es-accordion {
-  margin: 0 auto;
-  max-width: 990px;
-}
-#es-rc #es-rc-content .es-faq .es-accordion__element {
-  margin: 0 auto;
-  margin-bottom: 10px;
-  padding-bottom: 30px;
-  border: none;
-}
-#es-rc #es-rc-content .es-faq .es-accordion__element:last-of-type {
-  border-bottom: none;
-}
-#es-rc #es-rc-content .es-faq .es-accordion__element-content {
-  font-size: 14px;
-  line-height: 1.4;
-  color: #012349;
-  background-color: #fff;
-  overflow: hidden;
-  margin-top: -30px;
-  padding-left: 30px;
-  padding-right: 20px;
-  padding-bottom: 10px;
-  max-height: 0;
-  transition: max-height 0.5s ease-out;
-  border-radius: 5px;
-}
-#es-rc #es-rc-content .es-faq .es-accordion__title {
-  padding: 15px 50px 15px 15px;
-  font-size: 14px;
-  color: #fff;
-  background-color: #012349;
-  transition: all 200ms ease-out;
-  border-radius: 5px;
-  font-weight: 700;
-  cursor: pointer;
-  z-index: 1;
-  position: relative;
-}
-#es-rc #es-rc-content .es-faq .es-accordion .es-accordion__arrow {
-  width: 35px;
-  position: absolute;
-  right: 15px;
-  top: 5px;
-  margin: auto 0;
-  transition: all 0.3s ease-out;
-}
-#es-rc #es-rc-content .es-faq .es-accordion .active .es-accordion__arrow {
-  transform: rotate(180deg);
-}
-#es-rc #es-rc-content .es-accordion__checkbox {
-  display: none;
-}
-#es-rc #es-rc-content .es-accordion__element-content {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.4s ease;
-  padding-left: 30px;
-  padding-right: 20px;
-  padding-bottom: 0;
-  margin-top: -30px;
-}
-#es-rc #es-rc-content .es-accordion__checkbox:checked ~ .es-accordion__element-content {
-  max-height: 500px;
-  padding-bottom: 10px;
-}
-#es-rc #es-rc-content .es-accordion__title {
-  display: block;
-  padding: 4px 15px 17px 60px;
-  font-size: 14px;
-  color: #fff;
-  cursor: pointer;
-  position: relative;
-}
-#es-rc #es-rc-content .es-accordion__arrow {
-  width: 17px;
-  position: absolute;
-  right: 28px;
-  top: 10px;
-  transition: transform 0.3s ease;
-}
-#es-rc #es-rc-content .es-accordion__checkbox:checked + .es-accordion__title .es-accordion__arrow {
-  transform: rotate(180deg);
-}
 #es-rc #es-rc-content .es-eco {
   background: #005BAB;
   padding-top: 50px;
@@ -1187,6 +1034,9 @@
   }
   #es-rc #es-rc-content .es-faq .es-accordion__element-content p {
     font-size: 16px;
+  }
+  #es-rc #es-rc-content .es-product__list {
+    align-items: center;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1335,6 +1185,12 @@
     bottom: -95px;
     left: -20px;
     width: 180px;
+  }
+  #es-rc #es-rc-content .es-product__list--mobile {
+    display: none;
+  }
+  #es-rc #es-rc-content .es-product__list--desktop {
+    display: block;
   }
   #es-rc #es-rc-content .es-product__list-item-title {
     position: absolute;
